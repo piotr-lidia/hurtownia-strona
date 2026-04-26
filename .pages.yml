@@ -7,8 +7,9 @@ content:
     type: collection
     path: src/content/cennik
     view:
-      fields: [ nazwa, cena, kategoria ]
+      fields: [ kolejnosc, nazwa, cena, kategoria ]
     fields:
+      - { name: kolejnosc, label: Kolejnosc, type: number, required: true }
       - { name: nazwa, label: Nazwa, type: string, required: true }
       - { name: cena, label: Cena, type: string, required: true }
       - { name: ogImage, label: Title, type: string }
